@@ -1,0 +1,254 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2eee3;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.title {
+    text-align: center;
+    background-color: #CAD9BA;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+    margin: -20px -20px 20px -20px;
+    font-size: 1.5rem;
+}
+
+/* Layout de detalle del producto */
+.product-details {
+    display: flex;
+    gap: 20px;
+}
+
+/* Imágenes del producto */
+.product-images {
+    width: 50%;
+    text-align: center;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.thumbnail-gallery img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail-gallery img:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Información del producto */
+.product-info {
+    background-color: #cad9ba;
+    width: 50%;
+    padding: 20px;
+    /* Espaciado interno para evitar que el texto toque los bordes */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    border: 1px solid #aaa;
+    /* Añadir borde suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Añadir sombra ligera para dar profundidad */
+    margin-bottom: 20px;
+    /* Espacio inferior */
+}
+
+.product-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+    /* Centrar el título */
+    color: #333;
+    /* Color para el título */
+}
+
+/* Precio */
+.price {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 10px;
+    text-align: left;
+    /* Centrar el precio */
+}
+
+/* Disponibilidad */
+.availability {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: left;
+    /* Centrar la disponibilidad */
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    /* Asegura que los labels estén en su propia línea */
+    margin-bottom: 5px;
+}
+
+/* Estilos para el selector */
+select {
+    margin: 10px 0 20px;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    /* Bordes redondeados para el select */
+    border: 1px solid #ccc;
+    /* Borde de color suave */
+    width: 10%;
+    /* Asegura que el select ocupe el 100% del contenedor */
+}
+
+/* Descripción del producto */
+.description {
+    font-size: 1rem;
+    text-align: justify;
+    /* Alinea el texto en ambas márgenes */
+    margin-bottom: 20px;
+    color: #555;
+    line-height: 1.5;
+    /* Aumenta el espacio entre las líneas para mejor legibilidad */
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    /* Elimina el margen predeterminado */
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+/* Pestañas */
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.tabs button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #CAD9BA;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.tabs button:hover {
+    background-color: #A3B59F;
+    color: #FFF;
+}
+
+.tab-content {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #FFF;
+    margin-top: 10px;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+/* Productos relacionados */
+.related-products {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 200px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #cad9ba;
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product-card h4 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Botón para añadir al carrito */
+.add-to-cart-btn {
+    padding: 5px 20px;
+    /* Espaciado dentro del botón */
+    border: none;
+    background-color: #4d594f;
+    /* Fondo del botón */
+    color: white;
+    /* Texto blanco */
+    margin-left: auto;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    width: auto;
+    /* El botón ajustará su tamaño automáticamente */
+}
+
+/* Estilo para el hover del botón */
+.add-to-cart-btn:hover {
+    background-color: #6d9e72;
+    /* Cambio de color cuando se pasa el ratón */
+}
